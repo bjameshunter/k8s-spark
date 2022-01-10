@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: spark-operator
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: spark-operator
+  namespace: spark-operator
+spec:
+  chart:
+    repository: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
+    name: spark-operator
+    version: 1.1.16
