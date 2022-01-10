@@ -11,6 +11,6 @@ metadata:
   namespace: spark-operator
 spec:
   chart:
-    repository: https://github.com/GoogleCloudPlatform/spark-on-k8s-operator
-    name: spark-operator
-    version: 1.1.16
+    git: git@github.com:GoogleCloudPlatform/spark-on-k8s-operator.git
+    ref: master
+    path: charts/spark-operator-chart
