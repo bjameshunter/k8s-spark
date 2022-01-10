@@ -14,3 +14,7 @@ spec:
     git: git@github.com:GoogleCloudPlatform/spark-on-k8s-operator.git
     ref: master
     path: charts/spark-operator-chart
+  values:
+    tag: latest
+
+
