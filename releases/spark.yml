@@ -15,6 +15,7 @@ spec:
     ref: master
     path: charts/spark-operator-chart
   values:
-    tag: latest
+    image:
+      tag: latest
 
 
